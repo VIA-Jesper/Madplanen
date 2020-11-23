@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="24dp">
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/fragment_mealplan_item_cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/default_corner_radius_minus"
+        app:cardCornerRadius="@dimen/default_corner_radius"
+        app:cardElevation="2dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipChildren="false"
+            android:clipToPadding="false">
+            <!-- Media -->
+            <ImageView
+                android:id="@+id/fragment_mealplan_item_cardImage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/recipeCardImageSize"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="@string/recipe_background_image" />
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.6"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fragment_mealplan_item_blurCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/default_corner_radius_minus"
+                app:cardCornerRadius="@dimen/default_corner_radius"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/guideline4">
+
+                <ImageView
+                    android:id="@+id/fragment_mealplan_item_cardImage_blur"
+                    android:layout_width="match_parent"
+                    android:layout_height="83dp"
+                    android:scaleType="centerCrop"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="83dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/background_recipe_blur"
+                    tools:ignore="ContentDescription" />
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="86dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/background_recipe_blur"
+                    tools:ignore="ContentDescription" />
+                <LinearLayout
+                    android:id="@+id/fragment_mealplan_item_cardTextLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="24dp"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp"
+                    android:orientation="vertical"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/fragment_mealplan_item_blurCardView">
+
+
+                    <TextView
+                        style="@style/TextAppearance.MyTheme.Headline6"
+                        android:id="@+id/fragment_mealplan_item_cardHeaderText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/default_value" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        tools:ignore="UseCompoundDrawables">
+                        <ImageView
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            app:tint="?attr/colorPrimary"
+                            android:src="@drawable/ic_baseline_timer_24"
+                            tools:ignore="ContentDescription" />
+                        <TextView
+                            style="@style/TextAppearance.MyTheme.Caption"
+                            android:id="@+id/fragment_mealplan_item_cardPrepTimeText"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="xx min"
+                            android:paddingStart="6dp"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText,RtlSymmetry" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom|end"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/fragment_mealplan_item_favoriteIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/default_layout_spacing"
+                    android:src="@drawable/ic_baseline_favorite_24"
+                    app:tint="?attr/colorSecondaryVariant" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/fragment_mealplan_item_shoppingListIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/default_layout_spacing"
+                    android:src="@drawable/ic_baseline_add_24"
+                    android:background="?attr/colorPrimary"
+                    app:shapeAppearance="@style/ImageViewCornerCut"
+                    app:tint="?attr/colorOnPrimarySurface" />
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

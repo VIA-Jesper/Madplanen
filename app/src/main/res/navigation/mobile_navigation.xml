@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/nav_favorites">
+
+    <fragment
+        android:id="@+id/nav_recipie"
+        android:name="dk.ipfortify.madplanen.ui.recipe.RecipeFragment"
+        tools:layout="@layout/fragment_recipe"/>
+    <fragment
+        android:id="@+id/nav_fridge"
+        android:name="dk.ipfortify.madplanen.ui.fridge.FridgeFragment"
+        android:label="@string/my_fridge"
+        tools:layout="@layout/fragment_fridge">
+        <action
+            android:id="@+id/action_nav_fridge_to_fridgeAddContentFragment"
+            app:destination="@id/nav_fridge_add_content"
+            app:enterAnim="@anim/fragment_slide_right_enter"
+            app:exitAnim="@anim/fragment_slide_right_exit"
+            app:popEnterAnim="@anim/fragment_slide_left_enter"
+            app:popExitAnim="@anim/fragment_slide_left_exit"
+            app:popUpTo="@id/nav_fridge_add_content"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_fridge_add_content"
+        android:name="dk.ipfortify.madplanen.ui.fridge.FridgeAddContentFragment"
+        android:label="@string/add_to_fridge"
+        tools:layout="@layout/fragment_fridge_add_content" >
+        <action
+            android:id="@+id/action_nav_fridge_add_content_to_nav_fridge"
+            app:destination="@id/nav_fridge" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_favorites"
+        android:name="dk.ipfortify.madplanen.ui.favorite.FavoriteRecipesFragment"
+        android:label="Favorite Recipes"
+        tools:layout="@layout/fragment_favorite" >
+        <action
+            android:id="@+id/action_nav_favorites_to_nav_recipies"
+            app:destination="@id/nav_recipie" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_shopping"
+        android:name="dk.ipfortify.madplanen.ui.shopping.ShoppingFragment"
+        android:label="@string/shopping_list"
+        tools:layout="@layout/fragment_shopping" />
+    <fragment android:id="@+id/nav_start" >
+        <action
+            android:id="@+id/action_nav_start_to_nav_shopping"
+            app:destination="@id/nav_shopping" />
+        <action
+            android:id="@+id/action_nav_start_to_nav_home"
+            app:destination="@id/nav_home" />
+        <action
+            android:id="@+id/action_nav_start_to_nav_fridge"
+            app:destination="@id/nav_fridge" />
+        <action
+            android:id="@+id/action_nav_start_to_mealPlanRootFragment"
+            app:destination="@id/nav_mealplan" />
+        <action
+            android:id="@+id/action_nav_start_to_nav_favorites"
+            app:destination="@id/nav_favorites" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_mealplan"
+        android:name="dk.ipfortify.madplanen.ui.mealplan.MealPlanRootFragment"
+        android:label="@string/meal_plan"
+        tools:layout="@layout/fragment_mealplan_root" />
+</navigation>

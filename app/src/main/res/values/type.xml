@@ -1,0 +1,69 @@
+
+<resources>
+
+    <!--Typography-->
+
+    <style name="TextAppearance.MyTheme.Headline1" parent="TextAppearance.MaterialComponents.Headline1">
+        <item name="android:textColor">@color/goldpalette_900</item>
+        @style/TextAppearance.MaterialComponents.Headline1
+    </style>
+
+    <style name="TextAppearance.MyTheme.Headline2" parent="TextAppearance.MaterialComponents.Headline2">
+        <item name="android:textColor">@color/goldpalette_900</item>
+        @style/TextAppearance.MaterialComponents.Headline2
+    </style>
+
+    <style name="TextAppearance.MyTheme.Headline3" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="android:textColor">@color/goldpalette_900</item>
+        @style/TextAppearance.MaterialComponents.Headline
+    </style>
+
+    <style name="TextAppearance.MyTheme.Headline4" parent="TextAppearance.MaterialComponents.Headline4">
+        <item name="android:textColor">@color/goldpalette_900</item>
+        @style/TextAppearance.MaterialComponents.Headline
+    </style>
+
+    <style name="TextAppearance.MyTheme.Headline5" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="android:textColor">@color/goldpalette_900</item>
+        @style/TextAppearance.MaterialComponents.Headline
+    </style>
+
+    <style name="TextAppearance.MyTheme.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:textColor">@color/goldpalette_900</item>
+    </style>
+
+    <style name="TextAppearance.MyTheme.Subtitle1" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:textColor">@color/goldpalette_900</item>
+        @style/TextAppearance.MaterialComponents.Subtitle1
+    </style>
+
+    <style name="TextAppearance.MyTheme.Subtitle2" parent="TextAppearance.MaterialComponents.Subtitle2">
+        <item name="android:textColor">@color/goldpalette_900</item>
+        @style/TextAppearance.MaterialComponents.Subtitle2
+    </style>
+
+    <style name="TextAppearance.MyTheme.Body1" parent="TextAppearance.MaterialComponents.Body1">
+        @style/TextAppearance.MaterialComponents.Body1
+        <item name="android:textColor">@color/goldpalette_900</item>
+    </style>
+
+    <style name="TextAppearance.MyTheme.Body2" parent="TextAppearance.MaterialComponents.Body2">
+        @style/TextAppearance.MaterialComponents.Body2
+        <item name="android:textColor">@color/goldpalette_900</item>
+    </style>
+
+    <style name="TextAppearance.MyTheme.Button" parent="TextAppearance.MaterialComponents.Button">
+        @style/TextAppearance.MaterialComponents.Button
+    </style>
+
+    <style name="TextAppearance.MyTheme.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        @style/TextAppearance.MaterialComponents.Caption
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/goldpalette_500</item>
+    </style>
+
+    <style name="TextAppearance.MyTheme.Overline" parent="TextAppearance.MaterialComponents.Overline">
+        @style/TextAppearance.MaterialComponents.Overline
+    </style>
+
+</resources>

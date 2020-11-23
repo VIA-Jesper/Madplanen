@@ -1,3 +1,52 @@
 <resources>
-    <string name="app_name">Mad Planen</string>
+    <string name="app_name">FoodPlanner</string>
+    <string name="default_value">Not available</string>
+
+
+    <string name="nav_header_title" translatable="false">Android Studio</string>
+    <string name="nav_header_desc" translatable="false">Navigation header</string>
+
+    <string name="menu_home">Home</string>
+    <string name="meal_plan">Meal plan</string>
+
+    <string name="fridge">Fridge</string>
+    <string name="total_time">Total time</string>
+    <string name="work_time">Work time</string>
+    <string name="instructions">Instruction</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="my_fridge">My Fridge</string>
+    <string name="save">Save</string>
+    <string name="add_to_fridge">Add to fridge</string>
+    <string name="delete_all">Delete all</string>
+    <string name="shopping_list">Shopping List</string>
+
+
+    <string name="scanning_code">Scanning code…</string>
+    <string name="correct">Correct?</string>
+    <string name="type_correct_name">Type correct name</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="not_found_in_db">Could not find in DB. Type name</string>
+    <string name="more_features_on_its_way">More features on its way</string>
+    <string name="logout">Logout</string>
+    <string name="login">Login</string>
+    <string name="favorites">Favorites</string>
+    <string name="item_name">Item name</string>
+    <string name="scan">Scan</string>
+    <string name="amount">Amount</string>
+    <string name="measured_in">Measured in</string>
+    <string name="details">Details</string>
+    <string name="login_to_enable_scanning_feature">Login to enable scanning feature</string>
+    <string name="incorrect">Incorrect?</string>
+    <string name="recipe_background_image">Recipe background image</string>
+    <string name="list_of_needed_ingredients">List of needed ingredients</string>
+
+    <string-array name="measure_ingredient_in">
+        <item>kg</item>
+        <item>g</item>
+        <item>l</item>
+        <item>ml</item>
+    </string-array>
+
+
 </resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+
+    <dimen name="elevation_default_top_app_bar">4dp</dimen>
+    <dimen name="recipeCardImageSize">250dp</dimen>
+    <dimen name="recipeImageHeight">300dp</dimen>
+    <dimen name="appbar_height">56dp</dimen>
+    <dimen name="default_corner_radius">24dp</dimen>
+    <dimen name="default_corner_radius_minus">-24dp</dimen>
+    <dimen name="default_layout_spacing">10dp</dimen>
+</resources>

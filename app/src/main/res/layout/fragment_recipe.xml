@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    tools:context=".ui.recipe.RecipeFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:paddingBottom="@dimen/appbar_height"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:id="@+id/recipefragment_timeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|start"
+            android:orientation="horizontal"
+            android:padding="@dimen/default_layout_spacing"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                app:srcCompat="@drawable/ic_baseline_timer_24"
+                app:tint="?attr/colorPrimary"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                style="@style/TextAppearance.MyTheme.Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/default_layout_spacing"
+                android:text="@string/total_time"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/TextAppearance.MyTheme.Caption"
+                android:id="@+id/recipefragment_totaltime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/default_layout_spacing"
+                android:text="00 min."
+                android:textSize="12sp"
+                tools:ignore="HardcodedText" />
+
+            <Space
+                android:layout_width="@dimen/default_layout_spacing"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                style="@style/TextAppearance.MyTheme.Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/work_time"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                style="@style/TextAppearance.MyTheme.Caption"
+                android:id="@+id/recipefragment_worktime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/default_layout_spacing"
+                android:text="00 min."
+                android:textSize="12sp"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/recipefragment_header"
+            style="@style/TextAppearance.MyTheme.Headline6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/default_layout_spacing"
+            android:text="Header"
+            app:layout_constraintTop_toBottomOf="@+id/recipefragment_timeLayout"
+            tools:ignore="HardcodedText" />
+
+        <LinearLayout
+            android:id="@+id/recipefragment_ingredientsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/recipefragment_header">
+            <TextView
+                style="@style/TextAppearance.MyTheme.Headline6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="@dimen/default_layout_spacing"
+                android:text="@string/ingredients" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recipefragment_ingredientsListView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/default_layout_spacing"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/appbar_height"
+            app:layout_constraintTop_toBottomOf="@id/recipefragment_ingredientsLayout">
+            <TextView
+                style="@style/TextAppearance.MyTheme.Headline6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/default_layout_spacing"
+                android:text="@string/instructions" />
+            <TextView
+                android:id="@+id/recipefragment_instructionListView"
+                android:padding="@dimen/default_layout_spacing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

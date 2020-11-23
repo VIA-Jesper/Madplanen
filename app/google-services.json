@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "173315684081",
+    "firebase_url": "https://madplanen-ce20f.firebaseio.com",
+    "project_id": "madplanen-ce20f",
+    "storage_bucket": "madplanen-ce20f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:173315684081:android:b175b95d4516296f2c1b50",
+        "android_client_info": {
+          "package_name": "dk.ipfortify.madplanen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "173315684081-su5nrclv9v8edust7bsfcdpnu5gakt1s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBY-bVubvnCRVT_DHd-UC01OrPLUf4-3N8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "173315684081-su5nrclv9v8edust7bsfcdpnu5gakt1s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
