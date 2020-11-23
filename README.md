@@ -27,62 +27,58 @@ To incorportate more google services as per requirement for the PoC, a barcode s
 - Well-structured code		            Done :)
 
 #### ---------------- Sessions and Requirements ----------------
+Everything in the following list can be found within the app which is taught at class
 ##### Session 1	Intro & Activity
-- ConstraintLayout									OK
+- 		ConstraintLayout
 
 ##### Session 2	Activities & resources
-- 		Lifecycle											OK
-- 		Resources (Layout) 							OK
-- 		Menu (Layout)								  OK
-- 		Values (Layout)								   OK
+- 		Lifecycle
+- 		Resources (Layout) 
+- 		Menu (Layout)
+- 		Values (Layout)
 
 ##### Session 3	Intents & Fragments
-- 		Explicit											OK
-- 		Implicit											-
-- 		Recieving data (bundle)					OK
-- 		Permissions (manifest)					 OK
-- 		Fragments									   OK
-- 		Navigation component				  OK
+- 		Explicit
+- 		Recieving data (bundle)
+- 		Permissions (manifest)
+- 		Fragments
+- 		Navigation component
 
 ##### Session 4	User Experience
-- 		Material design								OK
-- 		App Bar											OK
-- 		Navigation Drawer						OK
-- 		Bottom navigation						OK
-- 		Tabs											  OK
-- 		Floating Action Button					-
-- 		Library Dependencies				   OK
-- 		Menu Items									 OK
-- 		Button Press menu						OK
+- 		Material design
+- 		App Bar
+- 		Navigation Drawer
+- 		Bottom navigation
+- 		Tabs
+- 		Library Dependencies
+- 		Menu Items
+- 		Button Press menu
 
 ##### Session 5	RecyclerView
-- 		Implement RecyclerView				OK
-- 		Adapter											OK
-- 		Interactive (Listener)					   OK
+- 		Implement RecyclerView
+- 		Adapter
+- 		Interactive (Listener)
 
 ##### Session 6	Architecture
-- 		MVVM (M, V, VM)							OK
-- 		LiveData										OK
+- 		MVVM (M, V, VM)
+- 		LiveData
 ##### Session 7	Local Data Storage
-- 		Shared Preference						  OK
-- 		Room											 OK
-- 		Background Thread						OK
-- 		AndroidViewModel						OK
+- 		Shared Preference
+- 		Room
+- 		Background Thread
+- 		AndroidViewModel
 
 ##### Session 8	Networking
-- 		Retrofit											OK
-- 		Image Loading (Glide)					  OK
+- 		Retrofit
+- 		Image Loading (Glide)
 
 ##### Session 9	Google Services
-- 		Firebase Auth									OK
-- 		Firebase RT Database					   OK
-- 		Firebase Cloud									 -
-- 		Google Analytics								-
-- 		EXTRA BARCODE SCANNER			 OK
+- 		Firebase Auth
+- 		Firebase RT Database
+- 		barcode scanner
 
 ##### Session 10	Testing & publishing
-- 		Unittest											OK
-- 		Mocking											  OK
-- 		Prepare for release							  -
-- 		obfuscate with proguard					 -
-- 		sign app (keystore)							  -
+- 		Unittest
+- 		Mocking
+- 		Mockito
+- 		Expresso
