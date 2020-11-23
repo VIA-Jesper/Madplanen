@@ -2,7 +2,7 @@
 
 Proof of concept of a meal plan app based on principles learned in IT-AND1-A20 android cource.
 
-![Alt Text](https://github.com/via-jesper/madplanen/mealplan_poc.gif)
+![poc_display](mealplan_poc.gif)
 
 
 The idea was to create a mealplanner, which could hold the content of a fridge and compare the content with needed items from a selected range. It should then be able to display which items was needed for shopping.
